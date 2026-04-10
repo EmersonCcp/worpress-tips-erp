@@ -1,0 +1,11 @@
+.git
+.gitignore
+docker-compose.yml
+.dockerignore
+node_modules
+npm-debug.log
+error_log
+php_errors.log
+wp-config-sample.php
+readme.html
+license.txt
