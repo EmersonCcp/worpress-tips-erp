@@ -128,7 +128,7 @@
 <section id="features" class="bg-blue-dark features-tabs">
     <div class="container">
         <div class="section-header text-center white">
-            <h2>Descubre tipsCloud</h2>
+            <h2>Descubre TipsCloud</h2>
             <div class="section-separator line-white"></div>
             <p>¡tipsCloud es más que un Sistema!. Es un funcionario fiel que te ayudará a producir y vender más.</p>
         </div>
@@ -186,11 +186,38 @@
                 <div class="tab-content" id="tab-feature-2">
                     <div class="row align-items-center">
                         <div class="col-md-6">
-                            <h4 class="text-primary">Integración Total</h4>
-                            <p>Con tipsCloud, puede integrar su calendario, envío de SMS y enlaces directos a sus sitios web favoritos. Todo en una sola plataforma para maximizar la eficiencia.</p>
+                            <h4 class="text-primary">tipsCloud hace más eficiente tu día a día.</h4>
+                            <!-- <p>Con tipsCloud, puede integrar su calendario, envío de SMS y enlaces directos a sus sitios web favoritos. Todo en una sola plataforma para maximizar la eficiencia.</p> -->
+                             <div class="col-xs-5 col-sm-6">
+<!--                                    <div class="col-xs-12 col-sm-6 col-sm-push-6 col-lg-7 col-lg-push-5"> -->
+                                        <h4>tipsCloud hace más eficiente tu día a día.</h4>
+                                        <p>Con el sistema tendrás organizado tu tiempo y estarás mejor comunicado con tus clientes y funcionarios.</p>
+                                        <div class="tab-icon">
+                                            <div class="icon-sm">
+                                                <i class="icon icon-calendar"></i>
+                                            </div>
+                                            <p class="large">Integración de Calendario</p>
+                                            <p> El sistema organiza la agenda de acuerdo a las fechas de vencimientos de cuentas a cobrar o pagar, cumpleaños, fechas festivas, etc. Utiliza la agenda privada para gerenciar tareas diarias.</p>
+                                        </div>
+                                        <div class="tab-icon">
+                                            <div class="icon-sm">
+                                                <i class="icon icon-envelope"></i>
+                                            </div>
+                                            <p class="large">Envío de SMS</p>
+                                            <p> Envía SMS a tus clientes cuando se acercan sus vencimientos de cuentas, promocionar tus productos y envía mensajes personalizados por sus cumpleaños, todo desde el Sistema. Puedes creerlo?.</p>
+                                        </div>
+                                        <div class="tab-icon">
+                                            <div class="icon-sm">
+                                                <i class="icon icon-refresh"></i>
+                                            </div>
+                                            <p class="large">Multiples funciones</p>
+                                            <p> Dentro de poco podrás acceder a tu correo desde dentro del propio sistema, así como contar con más funciones que se encuentran en desarrollo, para que lo puedas hacer todo desde un mismo lugar.</p>
+                                        </div>
+									</div>
                         </div>
+                        
                         <div class="col-md-6">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/features/feature2.png" alt="Integración" class="img-fluid shadow">
+                            <img src="https://tipscloudapps.com/assets/images/features/feature2.png" alt="Integración" class="img-fluid shadow">
                         </div>
                     </div>
                 </div>
