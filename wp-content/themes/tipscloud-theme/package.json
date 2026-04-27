@@ -1,0 +1,13 @@
+{
+  "name": "tipscloud-theme",
+  "version": "1.0.0",
+  "description": "Tailwind CSS setup for TipsCloud theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/main.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./assets/css/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "latest"
+  }
+}
