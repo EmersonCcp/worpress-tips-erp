@@ -141,6 +141,41 @@ Sistema de Gestión inteligente en la Nube
     </div>
 </section>
 
+<!-- La solución ideal para cualquier negocio Section -->
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-4 lg:px-8">
+        <div class="text-center max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 font-outfit">
+                La solución ideal para cualquier negocio
+            </h2>
+            <p class="text-lg text-slate-600">
+                Empresas pequeñas o medianas como librerías, boutiques, mini-mercados, ferreterías, farmacias o auto servicios.
+            </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-6/12">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6 font-outfit">Altamente configurable</h3>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Con una muy fácil especificación de opciones tipsCloud te ayudará a optimizar y mejorar todos los procesos de tu negocio, descartando aquellos procedimientos o actividades que no son útiles o hacen perder tiempo, dejando a la vista sólo las funciones necesarias de acuerdo a tus necesidades.
+                </p>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('registrarme'))); ?>" class="text-primary-blue font-bold text-lg hover:underline inline-flex items-center group">
+                    Regístrate ahora y pruébalo, sin compromiso
+                    <i class="fas fa-chevron-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+            <div class="lg:w-6/12">
+                <div class="rounded-3xl overflow-hidden shadow-premium">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/atencion-farmacia.jpg" 
+                         alt="Solución ideal para cualquier negocio" 
+                         class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Adaptado a los controles vigentes Section -->
 <section class="py-24 bg-white">
     <div class="container mx-auto px-4 lg:px-8">
