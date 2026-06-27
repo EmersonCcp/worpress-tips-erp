@@ -411,7 +411,7 @@ Gracias a la facilidad de la movilidad entérate al instante de todo el funciona
 </section>
 
 <!-- Success Stories Section -->
-<section id="cases" class="py-24 bg-white">
+<section id="testimonials" class="py-24 bg-white">
     <div class="container mx-auto px-4 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-20">
             <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 font-outfit">Lo que dicen nuestros expertos</h2>
