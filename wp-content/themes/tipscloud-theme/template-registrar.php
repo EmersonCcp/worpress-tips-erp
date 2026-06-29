@@ -2,6 +2,40 @@
 /**
  * Template Name: Template Registrar
  */
+
+if ( $_SERVER['REQUEST_METHOD'] === 'POST' && isset( $_POST['email'] ) ) {
+    // Sanitizar los datos del formulario
+    $email = sanitize_email( $_POST['email'] );
+    $name  = sanitize_text_field( $_POST['name'] );
+    $phone = sanitize_text_field( $_POST['f_1'] );
+
+    $to      = 'emerson.paixao52@gmail.com';
+    $subject = 'Nuevo registro de empresa - tipsCloud';
+
+    $body  = "Se ha recibido un nuevo registro de empresa:\n\n";
+    $body .= "Nombre Completo: " . $name . "\n";
+    $body .= "Correo Electrónico: " . $email . "\n";
+    $body .= "Teléfono / WhatsApp: " . $phone . "\n";
+
+    $headers = array(
+        'Content-Type: text/plain; charset=UTF-8',
+        'From: Website tipsCloud <no-reply@tips.com.py>',
+        'Reply-To: ' . $name . ' <' . $email . '>'
+    );
+
+    $sent = wp_mail( $to, $subject, $body, $headers );
+
+    // Redireccionar según el resultado
+    if ( $sent ) {
+        $redirect_url = !empty( $_POST['successUrl'] ) ? esc_url_raw( $_POST['successUrl'] ) : home_url( '/r-gracias.html' );
+    } else {
+        $redirect_url = !empty( $_POST['errorUrl'] ) ? esc_url_raw( $_POST['errorUrl'] ) : home_url( '/r.html' );
+    }
+
+    wp_redirect( $redirect_url );
+    exit;
+}
+
 get_header(); ?>
 
 <main class="min-h-screen pt-32 pb-20 bg-slate-50 relative overflow-hidden">
@@ -56,7 +90,7 @@ get_header(); ?>
                     </div>
 
                     <!-- The Original Form Action and Fields -->
-                    <form action="https://tipscloudapps.ip-zone.com/ccm/subscribe/index/form/j7se4kvpu0" method="post" accept-charset="utf-8" class="space-y-6">
+                    <form action="" method="post" accept-charset="utf-8" class="space-y-6">
                         <!-- Hidden required fields from original form -->
                         <input type="hidden" name="successUrl" value="https://tipscloudapps.com/r-gracias.html">
                         <input type="hidden" name="errorUrl" value="https://tipscloudapps.com/r.html">
